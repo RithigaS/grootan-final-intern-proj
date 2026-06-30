@@ -1,7 +1,7 @@
 import { Recommendation } from "@/types/recommendation";
 
 export async function getRecommendations(): Promise<Recommendation[]> {
-    const res = await fetch("http://localhost:3000/api/recommendations", {
+    const res = await fetch("process.env.NEXT_PUBLIC_APP_URL/api/recommendations", {
         cache: "no-store",
     });
 
