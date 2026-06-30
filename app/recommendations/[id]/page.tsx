@@ -8,7 +8,7 @@ type Props = {
 };
 
 async function getRecommendation(id: string) {
-    const res = await fetch(`http://localhost:3000/api/recommendations/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/recommendations/${id}`, {
         cache: "no-store",
     });
 
