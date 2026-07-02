@@ -1,7 +1,7 @@
 import Link from "next/link";
 import RecommendationBadge from "@/components/dashboard/RecommendationBadge";
 import RiskBadge from "@/components/dashboard/RiskBadge";
-import StatusUpdater from "@/components/dashboard/StatusUpdater";
+import StatusUpdater from "@/components/dashboard/StatusUpater";
 
 type Props = {
     params: Promise<{ id: string }>;
